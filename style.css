@@ -1,0 +1,102 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background gradient and layout */
+body {
+    background: linear-gradient(135deg, #f7b42c, #fc575e);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Header styling */
+header h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Input styling */
+.todo-input {
+    width: 250px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Button styling */
+.todo-button {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-button i {
+    font-size: 1.2rem;
+}
+
+/* Todo container */
+.todo-container {
+    width: 300px;
+    max-width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Todo item styling */
+.todos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+/* Completed todo */
+.todos.completed {
+    background-color: #a3e4d7;
+    text-decoration: line-through;
+}
+
+/* Complete and delete buttons */
+.complete-btn, .trash-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #ff6347;
+    margin-left: 5px;
+}
+
+.complete-btn i, .trash-btn i {
+    font-size: 1rem;
+}
