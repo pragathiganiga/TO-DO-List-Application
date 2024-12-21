@@ -83,12 +83,13 @@ form {
 
 /* Completed todo */
 .todos.completed {
-    background-color: #a3e4d7;
+    background-color: #d4edda;
+    color: #155724;
     text-decoration: line-through;
 }
 
-/* Complete and delete buttons */
-.complete-btn, .trash-btn {
+/* Complete, edit, and delete buttons */
+.complete-btn, .edit-btn, .trash-btn {
     background: none;
     border: none;
     cursor: pointer;
@@ -97,6 +98,6 @@ form {
     margin-left: 5px;
 }
 
-.complete-btn i, .trash-btn i {
+.complete-btn i, .edit-btn i, .trash-btn i {
     font-size: 1rem;
 }
